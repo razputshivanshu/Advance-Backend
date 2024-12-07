@@ -1,11 +1,16 @@
-console.log("This is first program using NOde js");
+// require(__dirname + '/searching.js');
+const searching = require('./searching.js');
 
-import linearSearch from "./searching.js";
+// import searching from "./searching.js";
+
+console.log("Start");
+
+console.log("This is first program using NOde js");
 
 console.log(searching);
 
-console.log("Start");
 let arr = [1,2,3,45,645,34,232];
 let x = 45;
 
-linearSearch(arr, x);
+
+console.log(searching.linear(arr,x));
